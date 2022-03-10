@@ -1,0 +1,61 @@
+﻿
+@model List<EncantoLib.Entities.Cliente>
+@{
+    ViewData["Title"] = "Clientes";
+}
+
+<div>
+    <h3 class="display-4">Clientes</h3>
+    <p>
+        <a asp-action="Cadastrar">Cadastrar Cliente</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Nome
+                </th>
+                <th>
+                    CPF
+                </th>
+                <th>
+                    Telefone
+                </th>
+                <th>
+                    Status
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cpf)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telefone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    <a asp-action="Editar" asp-route-id="@item.Id">Editar</a>
+                    @if (item.Status == EncantoLib.Entities.Enums.StatusCliente.Ativo)
+                    {
+                        <a asp-action="Desativar" asp-route-id="@item.Id">Desativar</a>
+                    }
+                    else
+                    {
+                        <a asp-action="Ativar" asp-route-id="@item.Id">Ativar</a>
+                    }
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
