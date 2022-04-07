@@ -64,7 +64,7 @@ namespace EncantoLib.DAL.ADO
             {
                 _conn.Open();
                 SqlCommand cmd;
-                cmd = new SqlCommand("UPDATE tb_cliente SET [status] =" +  status + "WHERE id = " + id, _conn)
+                cmd = new SqlCommand("UPDATE tb_cliente SET [status] =" +  (int)status + "WHERE id = " + id, _conn)
                 {
                     CommandType = CommandType.Text
                 };
