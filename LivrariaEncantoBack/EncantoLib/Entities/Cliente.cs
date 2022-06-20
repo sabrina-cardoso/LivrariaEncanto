@@ -12,7 +12,6 @@ namespace EncantoLib.Entities
 {
     public class Cliente : ICliente
     {
-
         public int Id { get; set; }
         [Required]
         public string Nome { get; set; }
@@ -27,8 +26,6 @@ namespace EncantoLib.Entities
         [Required]
         [DisplayName("E-mail")]
         public string Email { get; set; }
-        [DisplayName("Endereço")]
-        public IEndereco Endereco { get; set; }
         public StatusCliente Status { get; set; }
     }
 }

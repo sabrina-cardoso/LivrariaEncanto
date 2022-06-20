@@ -11,8 +11,8 @@ namespace EncantoLib.Entities
     public class Venda : IVenda
     {
         public int Id { get; set; }
-        public ICliente Cliente { get; set; }
-        public List<ILivro> Livros { get; set; }
+        public int ClienteId { get; set; }
+        public Cliente Cliente { get; set; }
         public double Valor { get; set; }
         public StatusVenda Status { get; set; }
     }

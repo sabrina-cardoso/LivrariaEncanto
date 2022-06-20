@@ -15,7 +15,6 @@ namespace EncantoLib.Entities.Interfaces
         public DateTime DataNasc { get; set; }
         public string Telefone { get; set; }
         public string Email { get; set; }
-        public IEndereco Endereco { get; set; }
         public StatusCliente Status { get; set; }
     }
 }

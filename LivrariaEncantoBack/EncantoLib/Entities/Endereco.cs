@@ -26,5 +26,8 @@ namespace EncantoLib.Entities
         public string Cidade { get; set; }
         [Required]
         public string Estado { get; set; }
+        [Required]
+        public Cliente Cliente { get; set; }
+        public bool Principal { get; set; }
     }
 }

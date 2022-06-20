@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EncantoLib", "EncantoLib\EncantoLib.csproj", "{32ADC074-235A-4126-9D0E-03F4C0FB5555}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncantoAPI", "EncantoAPI\EncantoAPI.csproj", "{78B43319-BF4E-4FC7-AE38-40C811322A49}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncantoAPI", "EncantoAPI\EncantoAPI.csproj", "{FE79B44E-D93C-46F4-BB46-573E5C6D7BAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{32ADC074-235A-4126-9D0E-03F4C0FB5555}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32ADC074-235A-4126-9D0E-03F4C0FB5555}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32ADC074-235A-4126-9D0E-03F4C0FB5555}.Release|Any CPU.Build.0 = Release|Any CPU
-		{78B43319-BF4E-4FC7-AE38-40C811322A49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{78B43319-BF4E-4FC7-AE38-40C811322A49}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{78B43319-BF4E-4FC7-AE38-40C811322A49}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{78B43319-BF4E-4FC7-AE38-40C811322A49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE79B44E-D93C-46F4-BB46-573E5C6D7BAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE79B44E-D93C-46F4-BB46-573E5C6D7BAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE79B44E-D93C-46F4-BB46-573E5C6D7BAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE79B44E-D93C-46F4-BB46-573E5C6D7BAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

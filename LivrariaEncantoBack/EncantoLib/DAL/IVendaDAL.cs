@@ -1,4 +1,5 @@
 ﻿using EncantoLib.Entities;
+using EncantoLib.Entities.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace EncantoLib.DAL
     interface IVendaDAL
     {
         public Venda VendaGet(int id);
-        public List<Venda> ListVendas();
+        public IList<Venda> ListVendas();
         public void VendaUpdate(Livro livro);
         public void VendaAdd(Livro livro);
         public void VendaDelete(int id);

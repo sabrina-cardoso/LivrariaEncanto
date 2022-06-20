@@ -1,7 +1,10 @@
+using EncantoAPI.Models;
 using EncantoLib.Entities;
 using EncantoLib.Entities.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("conn");
 
 // Add services to the container.
 
@@ -13,6 +16,8 @@ builder.Services.AddScoped<ICliente, Cliente>();
 builder.Services.AddScoped<IEndereco, Endereco>();
 builder.Services.AddScoped<ILivro, Livro>();
 builder.Services.AddScoped<IVenda, Venda>();
+
+builder.Services.AddDbContext<Contexto>(x => x.UseSqlServer(connectionString));
 
 var app = builder.Build();
 
